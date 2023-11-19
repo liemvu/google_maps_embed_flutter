@@ -12,6 +12,8 @@ To use this plugin, add `google_maps_embed_flutter` as a [dependency in your pub
 
 ## Usage
 
+Generate API Key from [Google Cloud Platform](https://developers.google.com/maps/documentation/embed/get-api-key).
+
 Here's a basic example of how to use the `google_maps_embed_flutter` plugin.
 
 ```dart
