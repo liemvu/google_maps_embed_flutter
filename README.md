@@ -20,7 +20,9 @@ Here's a basic example of how to use the `google_maps_embed_flutter` plugin.
 import 'package:google_maps_embed_flutter/google_maps_embed_flutter.dart';
 
 EmbedGoogleMap(
-    parameters: PlaceParameters(key: apiKey)
-        ..q = "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States",
+    parameters: PlaceParameters(
+        key: kEmbedMapApiKey,
+        q: Place.address(
+            "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States")),
     );
 ```
