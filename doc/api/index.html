@@ -66,8 +66,10 @@
 <pre class="language-dart"><code class="language-dart">import 'package:google_maps_embed_flutter/google_maps_embed_flutter.dart';
 
 EmbedGoogleMap(
-    parameters: PlaceParameters(key: apiKey)
-        ..q = "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States",
+    parameters: PlaceParameters(
+        key: kEmbedMapApiKey,
+        q: Place.address(
+            "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States")),
     );
 </code></pre>
 </section>
@@ -85,27 +87,6 @@ EmbedGoogleMap(
 
           <dt id="google_maps_embed_flutter">
   <span class="name"><a href="google_maps_embed_flutter/google_maps_embed_flutter-library.html">google_maps_embed_flutter</a></span> 
-
-</dt>
-<dd>
-</dd>
-
-          <dt id="google_maps_embed_flutter_method_channel">
-  <span class="name"><a href="google_maps_embed_flutter_method_channel/google_maps_embed_flutter_method_channel-library.html">google_maps_embed_flutter_method_channel</a></span> 
-
-</dt>
-<dd>
-</dd>
-
-          <dt id="google_maps_embed_flutter_platform_interface">
-  <span class="name"><a href="google_maps_embed_flutter_platform_interface/google_maps_embed_flutter_platform_interface-library.html">google_maps_embed_flutter_platform_interface</a></span> 
-
-</dt>
-<dd>
-</dd>
-
-          <dt id="google_maps_embed_flutter_web">
-  <span class="name"><a href="google_maps_embed_flutter_web/google_maps_embed_flutter_web-library.html">google_maps_embed_flutter_web</a></span> 
 
 </dt>
 <dd>
@@ -148,9 +129,6 @@ EmbedGoogleMap(
       <li class="section-title">Libraries</li>
       <li><a href="widgets_embed_google_map/widgets_embed_google_map-library.html">embed_google_map</a></li>
       <li><a href="google_maps_embed_flutter/google_maps_embed_flutter-library.html">google_maps_embed_flutter</a></li>
-      <li><a href="google_maps_embed_flutter_method_channel/google_maps_embed_flutter_method_channel-library.html">google_maps_embed_flutter_method_channel</a></li>
-      <li><a href="google_maps_embed_flutter_platform_interface/google_maps_embed_flutter_platform_interface-library.html">google_maps_embed_flutter_platform_interface</a></li>
-      <li><a href="google_maps_embed_flutter_web/google_maps_embed_flutter_web-library.html">google_maps_embed_flutter_web</a></li>
       <li><a href="parameters_parameters/parameters_parameters-library.html">parameters</a></li>
       <li><a href="parameters_utils/parameters_utils-library.html">utils</a></li>
 </ol>
@@ -165,7 +143,7 @@ EmbedGoogleMap(
 <footer>
   <span class="no-break">
     google_maps_embed_flutter
-      1.0.1
+      1.0.3
   </span>
 
   
