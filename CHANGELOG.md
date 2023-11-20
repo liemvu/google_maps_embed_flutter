@@ -1,3 +1,7 @@
+## 1.0.4
+
+* Automated publish with github action
+
 ## 1.0.3
 
 * Update document
