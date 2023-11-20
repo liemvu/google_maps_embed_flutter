@@ -24,16 +24,20 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
     "Search"
   ];
   late final parameters = [
-    PlaceParameters(key: kEmbedMapApiKey)
-      ..q = "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States",
-    ViewParameters(key: kEmbedMapApiKey)
-      ..center = Coordinates(37.4220041, -122.0862462),
-    DirectionParameters(key: kEmbedMapApiKey)
-      ..origin = "place_id:ChIJ2eUgeAK6j4ARbn5u_wAGqWA"
-      ..destination = "place_id:ChIJE9on3F3HwoAR9AhGJW_fL-I",
-    StreetViewParameters(key: kEmbedMapApiKey)
-      ..location = Coordinates(46.414382, 10.013988),
-    SearchParameters(key: kEmbedMapApiKey)..q = "record stores in Seattle"
+    PlaceParameters(
+        key: kEmbedMapApiKey,
+        q: Place.address(
+            "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States")),
+    const ViewParameters(
+        key: kEmbedMapApiKey, center: Coordinates(37.4220041, -122.0862462)),
+    DirectionParameters(
+        key: kEmbedMapApiKey,
+        origin: Place.id("ChIJ2eUgeAK6j4ARbn5u_wAGqWA"),
+        destination: Place.id("ChIJE9on3F3HwoAR9AhGJW_fL-I")),
+    const StreetViewParameters(
+        key: kEmbedMapApiKey, location: Coordinates(46.414382, 10.013988)),
+    SearchParameters(
+        key: kEmbedMapApiKey, q: Place.name("record stores in Seattle"))
   ];
   late final tabController =
       TabController(length: kSegments.length, vsync: this);

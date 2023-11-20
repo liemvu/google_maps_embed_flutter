@@ -1,5 +1,7 @@
 PODS:
   - Flutter (1.0.0)
+  - google_maps_embed_flutter (0.0.1):
+    - Flutter
   - integration_test (0.0.1):
     - Flutter
   - url_launcher_ios (0.0.1):
@@ -9,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - google_maps_embed_flutter (from `.symlinks/plugins/google_maps_embed_flutter/ios`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
   - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
@@ -16,6 +19,8 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  google_maps_embed_flutter:
+    :path: ".symlinks/plugins/google_maps_embed_flutter/ios"
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
   url_launcher_ios:
@@ -25,6 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  google_maps_embed_flutter: db7fb0d2923cc9bb85f7f0a230f03141a313b65f
   integration_test: 13825b8a9334a850581300559b8839134b124670
   url_launcher_ios: bf5ce03e0e2088bad9cc378ea97fa0ed5b49673b
   webview_flutter_wkwebview: 2e2d318f21a5e036e2c3f26171342e95908bd60a

@@ -1,6 +1,6 @@
 name: google_maps_embed_flutter
 description: Google Maps using Embed API for Flutter
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/liemvu/google_maps_embed_flutter
 repository: https://github.com/liemvu/google_maps_embed_flutter
 issue_tracker: https://github.com/liemvu/google_maps_embed_flutter/issues
@@ -15,6 +15,7 @@ dependencies:
     sdk: flutter
   # flutter_web_plugins:
   #   sdk: flutter
+  plugin_platform_interface: ^2.0.2
   webview_flutter: ^4.4.2
   url_launcher: ^6.2.1
 
@@ -28,6 +29,12 @@ flutter:
   plugin:
     platforms:
       android:
+        package: com.rever.google_maps_embed_flutter
+        pluginClass: GoogleMapsEmbedFlutterPlugin
       ios:
+        pluginClass: GoogleMapsEmbedFlutterPlugin
+      # web:
+      #   pluginClass: GoogleMapsEmbedFlutterWeb
+      #   fileName: google_maps_embed_flutter_web.dart
 
 
